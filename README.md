@@ -8,7 +8,7 @@ just because you must do it by yourself
  
  Usage
  ```
- java -jar java-technical0test*.jar --input-file-name=path-to-csv-file-with-trades
+ java -jar java-technical-test*.jar --input-file-name=path-to-csv-file-with-trades
  ```
  
  For generating random input file use:
