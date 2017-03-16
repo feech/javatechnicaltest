@@ -15,9 +15,17 @@
         <relativePath/>
     </parent>
 
+    <scm>
+        <url>https://github.com/feech/javatechnicaltest.git</url>
+        <developerConnection>scm:git:https://github.com/feech/javatechnicaltest.git</developerConnection>
+    </scm>
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
 
     <dependencies>
         <dependency>
