@@ -1,0 +1,13 @@
+
+input-file-name: generated.csv
+
+mapper:
+  csv-mapper:
+    entity: 0
+    buysellfl: 1
+    agreedfx: 2
+    currency: 3
+    instructiondate: 4
+    settlementdate: 5
+    units: 6
+    priceperunit: 7
