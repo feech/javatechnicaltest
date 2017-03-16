@@ -18,10 +18,9 @@ public class ReportConsolePrinterTest {
 
 
     @Before
-    public void setUp(){
+    public void setUp() {
         Locale.setDefault(Locale.ENGLISH);
     }
-
 
 
     @Test
@@ -29,14 +28,14 @@ public class ReportConsolePrinterTest {
         ReportLine reportLine = new ReportLine(LocalDate.of(2017, 3, 12), 101., 301., "foo");
 
 
-        ReportConsolePrinter reportConsolePrinter = new ReportConsolePrinter(Arrays.asList(reportLine,reportLine));
+        ReportConsolePrinter reportConsolePrinter = new ReportConsolePrinter(Arrays.asList(reportLine, reportLine));
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(byteArrayOutputStream);
         reportConsolePrinter.print(printStream);
 
         Assert.assertEquals("2017-03-12 101.000 301.000 foo" +
-                "2017-03-12 101.000 301.000 foo", byteArrayOutputStream.toString("UTF-8").replace("\r\n",""));
+                "2017-03-12 101.000 301.000 foo", byteArrayOutputStream.toString("UTF-8").replace("\r", "").replace("\n", ""));
 
     }
 
