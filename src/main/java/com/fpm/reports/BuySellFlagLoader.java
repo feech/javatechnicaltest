@@ -5,6 +5,7 @@ import com.fpm.exceptions.DataQualityException;
 
 /**
  * Created by Kirill on 3/16/2017.
+ * recognize {@link BuySellFlag} in file's input
  */
 public class BuySellFlagLoader {
     static BuySellFlag convert(String val) throws DataQualityException {

@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 /**
  * Created by Kirill on 3/15/2017.
+ * holds report about trades for one day
  */
 public class ReportLine {
     public final LocalDate date;

@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 
 /**
  * Created by Kirill on 3/15/2017.
+ * loads trades from csv files
  */
 public class CsvLoader implements TradeLoader {
 
