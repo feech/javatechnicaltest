@@ -17,6 +17,7 @@ public class CsvLoader implements TradeLoader {
     private final Reader reader;
     private final Function<String[], Trade> mapper;
     private final String separator = ",";
+    private final boolean skipHeader = true;
 
     public CsvLoader(Reader reader, Function<String[], Trade> mapper) {
         this.reader = reader;
@@ -27,7 +28,7 @@ public class CsvLoader implements TradeLoader {
         BufferedReader in = new BufferedReader(reader);
 
         return in.lines()
-                .skip(1)
+                .skip(skipHeader?1:0)
                 .map(line -> mapper.apply(line.split(separator)));
 
     }
