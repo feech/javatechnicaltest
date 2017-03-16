@@ -21,6 +21,9 @@ import java.util.stream.Stream;
 
 /**
  * Created by Kirill on 3/15/2017.
+ * manages generating reports
+ * - input csv
+ * - output console
  */
 
 @Component
