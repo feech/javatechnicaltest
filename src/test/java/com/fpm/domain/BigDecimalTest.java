@@ -28,7 +28,7 @@ public class BigDecimalTest {
                 .sum();
 
         System.out.println(sum);
-        System.out.println(System.currentTimeMillis() - l);
+        System.out.println("summation of doubles in long array: "+(System.currentTimeMillis() - l));
 
     }
 
@@ -39,7 +39,7 @@ public class BigDecimalTest {
             double v = .0 + 10.;
             assert v>0;
         }
-        System.out.println(System.currentTimeMillis() - l);
+        System.out.println("summation of many doubles "+ (System.currentTimeMillis() - l));
     }
 
     @Test
@@ -57,8 +57,7 @@ public class BigDecimalTest {
                 .parallel()
                 .reduce(0.0, (x, y) -> x + y);
 
-        System.out.println(sum);
-        System.out.println(System.currentTimeMillis() - l);
+        System.out.println("reduction of doubles in array: "+(System.currentTimeMillis() - l));
 
     }
 
@@ -79,8 +78,7 @@ public class BigDecimalTest {
                         .parallel()
                         .reduce(BigDecimal.ZERO, BigDecimal::add).doubleValue();
 
-        System.out.println(sum);
-        System.out.println(System.currentTimeMillis() - l);
+        System.out.println("summation of BigDecimal in long array"+(System.currentTimeMillis() - l));
 
     }
     @Test
@@ -89,7 +87,7 @@ public class BigDecimalTest {
         for (int i = 0; i < 1_00_000_000; i++) {
             BigDecimal.ONE.add(BigDecimal.TEN);
         }
-        System.out.println(System.currentTimeMillis() - l);
+        System.out.println("summation of BigDecimals "+(System.currentTimeMillis() - l));
     }
 
 
