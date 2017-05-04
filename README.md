@@ -1,6 +1,6 @@
 # javatechnicaltest
 
-[![Build status](https://travis-ci.org/feech/javatechnicaltest.svg?branch=master)]
+[![Build status](https://travis-ci.org/feech/javatechnicaltest.svg?branch=master)](https://travis-ci.org/feech/javatechnicaltest)
 
 test project for JP morgan
 
